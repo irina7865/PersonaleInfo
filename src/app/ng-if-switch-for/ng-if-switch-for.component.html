@@ -1,0 +1,11 @@
+<p *ngIf="condition">Привет мир</p>
+<p *ngIf="!condition">Пока мир</p>
+<button (click)="toggle()">Toggle</button>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<div [ngSwitch]="count">
+    <ng-template ngSwitchCase ="5" >{{count * 10}}</ng-template>
+    <ng-template ngSwitchCase ="5">{{count * 100}}</ng-template>
+    <ng-template ngSwitchDefault>{{count * 1000}}</ng-template>
+  </div>
